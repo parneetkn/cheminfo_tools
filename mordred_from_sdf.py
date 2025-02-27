@@ -2,13 +2,14 @@
 ### Computing mordred chemical descriptors from sdf fies
 """
 
-##Install mordred
-# !pip install mordred
+##Install mordred and rdkit
+##try numpy version: 1.24.4 if you get something like 'cannot import name 'product' from 'numpy'
 
-
+from rdkit import Chem
 from mordred import Calculator, descriptors
 import pandas as pd
 import os
+
 
 def calculate_mordred_descriptors(input_sdf_folder, output_csv):
     """
@@ -37,5 +38,4 @@ def calculate_mordred_descriptors(input_sdf_folder, output_csv):
     print(f"Descriptors saved to {output_csv}")
 
 # Example usage:
-# calculate_mordred_descriptors('/path to input/sdf_folder/',
-#                              '/path to output/mordred_descriptors_out.csv')
+calculate_mordred_descriptors('/Users/parneet/Desktop/code/sample_sdf','/Users/parneet/Desktop/code/mordred_descriptors_out.csv')
