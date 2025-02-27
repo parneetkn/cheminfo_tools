@@ -38,4 +38,4 @@ def calculate_mordred_descriptors(input_sdf_folder, output_csv):
     print(f"Descriptors saved to {output_csv}")
 
 # Example usage:
-calculate_mordred_descriptors('/Users/parneet/Desktop/code/sample_sdf','/Users/parneet/Desktop/code/mordred_descriptors_out.csv')
+calculate_mordred_descriptors('/path-to-folder-with-sdf-files/','/path-to-csv/mordred_descriptors_out.csv/')
